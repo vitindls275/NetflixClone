@@ -1,0 +1,45 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+#page{
+    width: 100%;
+}
+
+header,main,footer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header,footer {
+    height: 60px;
+    background-color: black;
+}
+aside{  
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.imagem{
+    width: 100%;
+
+}
+
+#logo{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.asideEsquerda{
+    justify-content: center;
+}
+
+.asideDireita{
+    justify-content: end;
+}

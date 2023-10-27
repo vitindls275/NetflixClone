@@ -1,22 +1,40 @@
+@font-face{
+    src: url(assets/fonte/netflix-sans-font/NetflixSans-Bold.otf);
+    font-family: netflix-sans-bold;
+}
+
+@font-face{
+    src: url(assets/fonte/netflix-sans-font/NetflixSans-Regular.otf);
+    font-family: netflix-sans;
+}
+
 *{
     margin: 0%;
     padding: 0%;
+    font-family: netflix-sans;
+    color: white;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: netflix-sans-bold;
+
 }
 
 #page{
     width: 100%;
 }
 
-header,main,footer{
+header,main,footer,#secoesDeSeries,.produtos{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 
-header,footer {
+header,footer{
     height: 60px;
     background-color: black;
 }
+
 aside{  
     width: 50%;
     height: 100%;
@@ -25,7 +43,6 @@ aside{
 }
 .imagem{
     width: 100%;
-
 }
 
 #logo{
@@ -40,6 +57,113 @@ aside{
     justify-content: center;
 }
 
+#infos{
+    width: 50%;
+    height: 100%;
+    margin: 30px 0px;    
+     background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 30%, rgba(255,255,255,0) 85%) 
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row; 
+    gap: 10px;
+}
+
+nav li a{
+    text-decoration: none;
+}
+
 .asideDireita{
     justify-content: end;
 }
+
+.banner{
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/b9d9a6cb0cf523f131b6b153a675ab5956dd63f7.png);
+    overflow: hidden; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.buttonBanner{
+    width: 70px;
+    height: 33px;
+    background-color: #5d5f616c;
+    color: white;
+    border-radius: 5px;
+}
+
+.buttonBanner2{
+    width: 130px;
+    height: 33px;
+    background-color: #5d5f616c;
+    border-radius: 5px;
+}
+
+/* SEÇÃO DE SERIES */
+#secoesDeSeries{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    align-items: center;
+    background-color: black;
+}
+
+.fila{
+    width: 95%;
+    height: 200px;
+}
+
+.fila h2{
+    margin: 12px;
+    font-weight: bold; 
+}
+
+.produtos{
+    height: 150px;
+    gap: 10px;
+}
+
+.iten{
+    width: 230px;
+    height: 100%;
+}
+
+#iten1{
+    background-image: url(../images/06c40b3d2f8ca3068a0f6bcc6e45da866ddc78b4.png);
+}
+
+#iten2{
+    background-image: url(../images/3228a07e7432f929c11d93d7fc4a2fc3cd6c5b9c.png);
+}
+
+#iten3{
+    background-image: url(../images/3228a07e7432f929c11d93d7fc4a2fc3cd6c5b9c.png);
+}
+
+#iten4{
+    background-image: url(../images/3228a07e7432f929c11d93d7fc4a2fc3cd6c5b9c.png);
+}
+
+
+/* FIM SEÇÃO DE SERIES */
+
+/* FOOTER */
+footer p{
+    color: white;
+    font-size: small;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: rgb(146, 143, 143);
+}
+/* FIM FOOTER */
